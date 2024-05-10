@@ -7,7 +7,7 @@
     <description>Widget from react-switch</description>
     <icon/>
     <properties>
-        <propertyGroup caption="Data sourcey">
+        <propertyGroup caption="Data sorcery">
             <property key="switchAttribute" type="attribute">
                 <caption>Attribute (path)</caption>
                 <description/>

@@ -1,9 +1,20 @@
-import {Component, ReactNode, createElement} from "react";
+import {Component, ReactNode, createElement, CSSProperties} from "react";
 import Switch from 'react-switch';
 
 export interface SwitchInputProps {
     isChecked: boolean;
+    style?: CSSProperties;
+    className?: string;
+    tabIndex?: number;
+
 }
+
+// <Switch checked={this.props.isChecked}
+//         style={this.props.style}
+//         className={"form-control " + this.props.className}
+//         tabIndex={this.props.tabIndex}
+//         onChange={this.handleValueChanged} />
+
 
 export class SwitchInput extends Component<SwitchInputProps> {
     render(): ReactNode {

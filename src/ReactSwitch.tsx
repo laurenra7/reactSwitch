@@ -10,6 +10,11 @@ export class ReactSwitch extends Component<ReactSwitchContainerProps> {
     render(): ReactNode {
         // return <HelloWorldSample sampleText={this.props.sampleText ? this.props.sampleText : "World"} />;
         const isSwitched = this.props.switchAttribute.value || false; // default to false if empty
-        return <SwitchInput isChecked={isSwitched} />;
+        return <SwitchInput isChecked={isSwitched}
+                            style={this.props.style}
+                            className={this.props.class}
+                            tabIndex={this.props.tabIndex}
+
+        />;
     }
 }
